@@ -15,10 +15,10 @@ body {
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
     color: #ffdb99;
-    height: 1.4em;
+    height: 1.2em;
 }
 
 h2 {
@@ -59,7 +59,7 @@ li {
     color: #ffe3af;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 4rem;
-    font-weight: 900;
+    font-weight: 500;
     height: 1.1em;
 }
 
@@ -69,7 +69,7 @@ li {
 }
 
 .introduction {
-    margin-top: 20px;
+    margin: 15px 0 0 0;
     font-size: 1.1rem;
 }
 
@@ -79,10 +79,9 @@ li {
     min-height: 100vh;
     max-width: 1000px;
     width: 100%;
-    background: linear-gradient(90deg, #302828 0%, #18131d 100%);
+    background: linear-gradient(90deg, #272933 0%, #1c1720 100%);
 }
-
-/* Content Rows */
+ 
 .content-row {
     display: flex;
     align-items: stretch;
@@ -90,9 +89,8 @@ li {
 
 .separator-line {
     height: 1px;
-    background: #8b4343;
-    width: 80%;
-    margin: 0 10%;
+    background: #8b4343; 
+    margin: 0 60px 0 60px;
 }
 
 .separator-line-full {
@@ -100,6 +98,13 @@ li {
     background: #8b4343;
     width: 100%;
     margin-bottom: 30px;
+}
+
+.separator-line-header {
+    height: 1px;
+    background: #8b4343;
+    width: 100%;
+    margin: 10px 0 00px 0;
 }
 
 .section-header-row {
@@ -119,7 +124,7 @@ li {
 .main-content {
     flex: 1;
     width: 700px;
-    padding: 40px 60px;
+    padding: 40px 40px 40px 60px;
 }
 
 .no-gap {

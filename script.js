@@ -1,23 +1,19 @@
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Get references to the buttons
-    const downloadBtn = document.getElementById('downloadBtn');
-    const printBtn = document.getElementById('printBtn');
+    const downloadBtn = document.getElementById('downloadBtn'); 
 
     // Print functionality
-    printBtn.addEventListener('click', function() {
-        window.print();
-    });
-
-    // Download as PDF functionality (simulated)
     downloadBtn.addEventListener('click', function() {
-        // In a real implementation, you would use a library like jsPDF or html2pdf
-        alert('PDF download functionality would be implemented here.\n\nFor now, you can use the Print button and save as PDF from the print dialog.');
-        
-        // Alternative: Trigger print dialog which allows saving as PDF
-        // window.print();
-    });
-
+        // Open the PDF in a new window and trigger print
+        const printWindow = window.open('assets/CsabaMarosi_CV_2025_English.pdf', '_blank');
+        if (printWindow) {
+            printWindow.onload = function() {
+                printWindow.print();
+            };
+        }
+    }); 
+    
     // Add smooth scroll behavior for better UX
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
