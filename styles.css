@@ -70,7 +70,7 @@ li {
 
 .introduction {
     margin-top: 20px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .page-layout {
@@ -124,6 +124,9 @@ li {
 
 .no-gap {
     margin: 0 0 20px 0;
+}
+.small-gap {
+    margin: 5px 0 10px 0;
 }
 
 /* Media Column */
